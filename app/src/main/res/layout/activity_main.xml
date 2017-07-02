@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adylanroaffa.quizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="16dp"
+            android:src="@drawable/indo"
+            android:scaleType="fitCenter"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:background="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:padding="8sp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textSize="@dimen/header"
+            android:textAlignment="center"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif"
+
+            android:text="Seberapa jauh kamu mengenal Indonesia?"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginBottom="8sp"/>
+
+        <!-- Number 1-->
+        <View
+            style="@style/border"/>
+
+        <RelativeLayout
+            style="@style/soalspace">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="100sp"
+                android:layout_height="150sp"
+                android:src="@drawable/sulawesi"
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/image1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pulau di samping bernama Pulau..."
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toEndOf="@id/image1"/>
+
+                <RadioGroup
+                    android:id="@+id/RadioGroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/image1">
+                    <RadioButton
+                        android:id="@+id/number1opt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sulawesi"
+                        android:textSize="14sp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textColor="#000000"/>
+                    <RadioButton
+                        android:id="@+id/number1opt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kalimantan"
+                        android:textSize="14sp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textColor="#000000"/>
+                    <RadioButton
+                        android:id="@+id/number1opt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Maluku"
+                        android:textSize="14sp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textColor="#000000"/>
+                    <RadioButton
+                        android:id="@+id/number1opt4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jawa"
+                        android:textSize="14sp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textColor="#000000"/>
+                </RadioGroup>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/border"
+            android:layout_marginBottom="8sp"/>
+
+
+        <!-- Number 2-->
+        <View
+            style="@style/border"/>
+
+        <LinearLayout
+            style="@style/soalspace">
+
+            <TextView
+                style="@style/header"
+                android:text="Presiden ketiga Republik Indonesia adalah..."
+                android:textSize="@dimen/soal"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/RadioGroup2">
+                    <!-- option 1 -->
+                    <RadioButton
+                        android:id="@+id/number2opt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:buttonTint="@color/colorPrimary"/>
+                    <ImageView
+                        android:layout_width="@dimen/imagesReg"
+                        android:layout_height="@dimen/imagesReg"
+                        android:layout_gravity="center"
+                        android:src="@drawable/gusdur"
+                        android:layout_marginBottom="16dp"/>
+                    <!-- option 2 -->
+                    <RadioButton
+                        android:id="@+id/number2opt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:buttonTint="@color/colorPrimary"/>
+                    <ImageView
+                        android:layout_width="@dimen/imagesReg"
+                        android:layout_height="@dimen/imagesReg"
+                        android:layout_gravity="center"
+                        android:src="@drawable/megawati"
+                        android:layout_marginBottom="16dp"/>
+                    <!-- option 3 -->
+                    <RadioButton
+                        android:id="@+id/number2opt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:buttonTint="@color/colorPrimary"/>
+                    <ImageView
+                        android:layout_width="@dimen/imagesReg"
+                        android:layout_height="@dimen/imagesReg"
+                        android:layout_gravity="center"
+                        android:src="@drawable/habibie"
+                        android:layout_marginBottom="16dp"/>
+                    <!-- option 4 -->
+                    <RadioButton
+                        android:id="@+id/number2opt4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:buttonTint="@color/colorPrimary"/>
+                    <ImageView
+                        android:layout_width="@dimen/imagesReg"
+                        android:layout_height="@dimen/imagesReg"
+                        android:layout_gravity="center"
+                        android:src="@drawable/hatta"
+                        android:layout_marginBottom="16dp"/>
+                </RadioGroup>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            style="@style/border"
+            android:layout_marginBottom="8sp"/>
+
+
+        <!-- number 3-->
+        <View
+            style="@style/border"/>
+
+        <LinearLayout
+            style="@style/soalspace">
+
+            <TextView
+                style="@style/header"
+                android:text="Apa judul lagu ini?"/>
+
+            <ImageButton
+                android:id="@+id/number3Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/playbutton"
+                android:backgroundTint="@color/colorPrimary"
+                android:onClick="playMusic"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/number3_editText"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:hint="Judul Lagu"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:imeOptions="actionDone" />
+
+                <Button
+                    android:id="@+id/number3_editText_Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="CHECK"
+                    android:onClick="checkEditText"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/border"
+            android:layout_marginBottom="8sp"/>
+
+        <!--Number 4-->
+        <View
+            style="@style/border"/>
+
+        <LinearLayout
+            style="@style/soalspace">
+
+            <TextView
+                style="@style/header"
+                android:text="Ada berapa jumlah provinsi hingga saat ini?"/>
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/RadioGroup4">
+
+                <RadioButton
+                    android:id="@+id/number4opt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16sp"
+                    android:text="32"
+                    android:buttonTint="@color/colorPrimary"/>
+                <RadioButton
+                    android:id="@+id/number4opt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16sp"
+                    android:text="33"
+                    android:buttonTint="@color/colorPrimary"/>
+                <RadioButton
+                    android:id="@+id/number4opt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16sp"
+                    android:text="34"
+                    android:buttonTint="@color/colorPrimary"/>
+                <RadioButton
+                    android:id="@+id/number4opt4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8sp"
+                    android:text="35"
+                    android:buttonTint="@color/colorPrimary"/>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <View
+            style="@style/border"
+            android:layout_marginBottom="8sp"/>
+
+        <!--Number 5-->
+        <View
+            style="@style/border"/>
+
+        <LinearLayout
+            style="@style/soalspace">
+
+            <TextView
+                style="@style/header"
+                android:text="Dari nama-nama di bawah ini, yang pernah menjabat sebagai Ketua MPR adalah..."/>
+
+            <CheckBox
+                android:id="@+id/number5opt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amien Rais"
+                android:buttonTint="@color/colorPrimary"/>
+            <CheckBox
+                android:id="@+id/number5opt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fadli Zon"
+                android:buttonTint="@color/colorPrimary"/>
+            <CheckBox
+                android:id="@+id/number5opt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Taufiq Kiemas"
+                android:buttonTint="@color/colorPrimary"/>
+            <CheckBox
+                android:id="@+id/number5opt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agung Laksono"
+                android:buttonTint="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/border"
+            android:layout_marginBottom="8sp"/>
+
+        <!--Number 6-->
+        <View
+            style="@style/border"/>
+
+        <LinearLayout
+            style="@style/soalspace">
+
+            <TextView
+                style="@style/header"
+                android:text="Darimana rumah adat di bawah ini?"/>
+
+            <ImageView
+                android:layout_width="300sp"
+                android:layout_height="240sp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:src="@drawable/rumahjoglo"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/RadioGroup6">
+
+                <RadioButton
+                    android:id="@+id/number6opt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jawa Barat"
+                    android:buttonTint="@color/colorPrimary" />
+                <RadioButton
+                    android:id="@+id/number6opt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sumatera Barat"
+                    android:buttonTint="@color/colorPrimary"/>
+                <RadioButton
+                    android:id="@+id/number6opt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jawa Tengah"
+                    android:buttonTint="@color/colorPrimary"/>
+                <RadioButton
+                    android:id="@+id/number6opt4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maluku"
+                    android:buttonTint="@color/colorPrimary"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+            style="@style/border"
+            android:layout_marginBottom="8sp"/>
+
+        <!--Number 7-->
+
+        <View
+            style="@style/border"/>
+
+        <LinearLayout
+            style="@style/soalspace">
+
+            <TextView
+                style="@style/header"
+                android:text="Ibukota Provinsi Papua Barat adalah..."/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/number7_editText"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:hint="Ibukota"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:imeOptions="actionDone" />
+
+                <Button
+                    android:id="@+id/number7_editText_Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="CHECK"
+                    android:onClick="checkEditText"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/border"
+            android:layout_marginBottom="8sp"/>
+
+        <!--Number 8-->
+        <View
+            style="@style/border"/>
+
+        <LinearLayout
+            style="@style/soalspace">
+
+            <TextView
+                style="@style/header"
+                android:text="Yang termasuk suku bangsa di Pulau Jawa adalah.."/>
+
+            <CheckBox
+                android:id="@+id/number8opt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suku Madura"
+                android:buttonTint="@color/colorPrimary"/>
+            <CheckBox
+                android:id="@+id/number8opt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suku Sunda"
+                android:buttonTint="@color/colorPrimary"/>
+            <CheckBox
+                android:id="@+id/number8opt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suku Bugis"
+                android:buttonTint="@color/colorPrimary"/>
+            <CheckBox
+                android:id="@+id/number8opt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suku Betawi"
+                android:buttonTint="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/border"
+            android:layout_marginBottom="8sp"/>
+
+        <!--Number 9-->
+        <View
+            style="@style/border"/>
+
+        <LinearLayout
+            style="@style/soalspace">
+
+            <TextView
+                style="@style/header"
+                android:text="Apa nama makanan khas di bawah ini?"/>
+
+            <ImageView
+                android:layout_width="300sp"
+                android:layout_height="240sp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:src="@drawable/gadogado"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/RadioGroup9">
+
+                <RadioButton
+                    android:id="@+id/number9opt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Soto Madura"
+                    android:buttonTint="@color/colorPrimary"/>
+                <RadioButton
+                    android:id="@+id/number9opt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pempek Palembang"
+                    android:buttonTint="@color/colorPrimary"/>
+                <RadioButton
+                    android:id="@+id/number9opt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kerak Telor"
+                    android:buttonTint="@color/colorPrimary"/>
+                <RadioButton
+                    android:id="@+id/number9opt4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gado-gado"
+                    android:buttonTint="@color/colorPrimary"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+            style="@style/border"
+            android:layout_marginBottom="8sp"/>
+
+
+        <!--Number 10-->
+        <View
+            style="@style/border"/>
+
+        <LinearLayout
+            style="@style/soalspace">
+
+            <TextView
+                style="@style/header"
+                android:text="Pernyataan yang benar di bawah ini adalah.."/>
+
+            <CheckBox
+                android:id="@+id/number10opt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ada 37 Pasal di dalam UUD 1945"
+                android:buttonTint="@color/colorPrimary"/>
+            <CheckBox
+                android:id="@+id/number10opt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indonesia terletak di antara Samudra Hindia dan Samudra Atlantik"
+                android:buttonTint="@color/colorPrimary"/>
+            <CheckBox
+                android:id="@+id/number10opt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indonesia pernah keluar dari PBB"
+                android:buttonTint="@color/colorPrimary"/>
+            <CheckBox
+                android:id="@+id/number10opt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Surabaya merupakan kota terpadat di Indonesia"
+                android:buttonTint="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/border" />
+        <Button
+            android:id="@+id/submit_button"
+            android:paddingTop="16sp"
+            android:paddingBottom="16sp"
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:text="SUBMIT"
+            android:onClick="displayScore"/>
+        <Button
+            android:id="@+id/retry_button"
+            android:paddingTop="16sp"
+            android:paddingBottom="16sp"
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:text="TRY AGAIN"
+            android:onClick="restartApp"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

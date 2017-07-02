@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="soal">16sp</dimen>
+    <dimen name="header">24sp</dimen>
+    <dimen name="imagesReg">160sp</dimen>
+</resources>
